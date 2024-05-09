@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_150dp"
+    android:layout_height="@dimen/_231dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_first"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_135dp"
+            android:background="@drawable/shape_rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_first">
+
+            <View
+                android:id="@+id/txt_title_popular"
+                android:layout_width="@dimen/_134dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginHorizontal="@dimen/Recipe_space_2x"
+                android:layout_marginBottom="60dp"
+                android:background="@color/mediumGray"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:layout_width="@dimen/_55dp"
+                android:layout_height="@dimen/Recipe_space_2x"
+                android:layout_marginStart="@dimen/Recipe_space_3x"
+                android:layout_marginTop="@dimen/Recipe_space_2x"
+                android:background="@color/mediumGray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title_popular" />
+
+            <View
+                android:id="@+id/txt_time_popular"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/Recipe_space_3x"
+                android:layout_marginStart="@dimen/Recipe_space_3x"
+                android:layout_marginBottom="@dimen/Recipe_space_3x"
+                android:background="@color/mediumGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="@dimen/frame_bookmark_size"
+                android:layout_height="@dimen/frame_bookmark_size"
+                android:layout_marginEnd="@dimen/Recipe_space_4x"
+                android:layout_marginBottom="@dimen/Recipe_space_4x"
+                android:background="@drawable/shape_bookmark"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frame_circle"
+        android:layout_width="@dimen/frame_circle_size"
+        android:layout_height="@dimen/frame_circle_size"
+        android:layout_marginHorizontal="@dimen/Recipe_space_5x"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/img_circle"
+            android:layout_width="@dimen/img_circle_width"
+            android:layout_height="@dimen/img_circle_height"
+            android:layout_marginTop="@dimen/Recipe_space_2x"
+            android:background="@drawable/shape_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

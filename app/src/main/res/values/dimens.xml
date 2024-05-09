@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Recipe_layout_top">60dp</dimen>
+    <dimen name="Recipe_star_start">85dp</dimen>
+
+    <dimen name="Recipe_space_1x">4dp</dimen>
+    <dimen name="Recipe_space_2x">8dp</dimen>
+    <dimen name="Recipe_space_3x">12dp</dimen>
+    <dimen name="Recipe_space_4x">16dp</dimen>
+    <dimen name="Recipe_space_5x">20dp</dimen>
+    <dimen name="Recipe_space_6x">24dp</dimen>
+    <dimen name="Recipe_space_7x">28dp</dimen>
+    <dimen name="Recipe_space_8x">32dp</dimen>
+    <dimen name="Recipe_space_9x">36dp</dimen>
+    <dimen name="Recipe_space_10x">40dp</dimen>
+    <dimen name="Recipe_space_11x">44dp</dimen>
+    <dimen name="Recipe_space_12x">48dp</dimen>
+    <dimen name="Recipe_space_13x">52dp</dimen>
+    <dimen name="Recipe_space_14x">56dp</dimen>
+    <dimen name="Recipe_space_15x">60dp</dimen>
+
+    <dimen name="Recipe_textSize_very_small">12sp</dimen>
+    <dimen name="Recipe_textSize_small">14sp</dimen>
+    <dimen name="Recipe_textSize_normal">16sp</dimen>
+    <dimen name="Recipe_textSize_large">20sp</dimen>
+    <dimen name="Recipe_textSize_very_large">24sp</dimen>
+
+    <dimen name="radius_search_field">10dp</dimen>
+    <dimen name="frame_bookmark_size">28dp</dimen>
+    <dimen name="edt_search_height">44dp</dimen>
+    <dimen name="img_circle_height">80dp</dimen>
+    <dimen name="img_circle_width">100dp</dimen>
+    <dimen name="frame_circle_size">110dp</dimen>
+    <dimen name="max_width">212dp</dimen>
+
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_7dp">7dp</dimen>
+    <dimen name="_9dp">9dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_19dp">19dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_26dp">26dp</dimen>
+    <dimen name="_28dp">28dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_34dp">34dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_42dp">42dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_52dp">52dp</dimen>
+    <dimen name="_55dp">55dp</dimen>
+    <dimen name="_56dp">56dp</dimen>
+    <dimen name="_58dp">58dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_95dp">95dp</dimen>
+    <dimen name="_99dp">99dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_106dp">106dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_124dp">124dp</dimen>
+    <dimen name="_134dp">134dp</dimen>
+    <dimen name="_135dp">135dp</dimen>
+    <dimen name="_143dp">143dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_160dp">160dp</dimen>
+    <dimen name="_172dp">172dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_203dp">203dp</dimen>
+    <dimen name="_231dp">231dp</dimen>
+    <dimen name="_236dp">236dp</dimen>
+    <dimen name="_280dp">280dp</dimen>
+    <dimen name="_320dp">320dp</dimen>
+    <dimen name="_325dp">325dp</dimen>
+    <dimen name="_335dp">335dp</dimen>
+
+    <dimen name="_2mdp">2dp</dimen>
+
+</resources>

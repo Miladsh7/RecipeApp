@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.detail.RecentDetailFragment">
+
+    <!--Loading-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="-32dp">
+
+        <!--Cover-->
+        <ImageView
+            android:id="@+id/coverImg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_325dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Shadow-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0.5"
+            android:background="@drawable/bg_shadow_dark"
+            android:scaleY="-1"
+            app:layout_constraintBottom_toBottomOf="@id/coverImg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Back-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backImg"
+            android:layout_width="@dimen/_45dp"
+            android:layout_height="@dimen/_45dp"
+            android:layout_margin="@dimen/_19dp"
+            android:background="@drawable/bg_rounded_white"
+            android:padding="@dimen/_9dp"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+        <!--Favorite-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sourceImg"
+            android:layout_width="@dimen/_45dp"
+            android:layout_height="@dimen/_45dp"
+            android:layout_margin="@dimen/_19dp"
+            android:background="@drawable/bg_rounded_white"
+            android:padding="@dimen/_9dp"
+            android:src="@drawable/ic_book_sparkles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Source-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Recipe_space_3x"
+            android:layout_marginEnd="@dimen/Recipe_space_6x"
+            android:drawablePadding="@dimen/Recipe_space_1x"
+            android:gravity="center_vertical"
+            android:textColor="@color/Primary_50"
+            android:textSize="@dimen/Recipe_textSize_very_small"
+            app:drawableStartCompat="@drawable/ic_clock"
+            app:drawableTint="@color/Primary_50"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_title_popular_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coverImg"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title_recent_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_5x"
+            android:layout_marginEnd="@dimen/Recipe_space_3x"
+            android:layout_marginTop="@dimen/Recipe_space_3x"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearanceBold.h4"
+            app:layout_constraintEnd_toStartOf="@+id/timeTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coverImg"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_6x"
+            android:layout_marginTop="@dimen/Recipe_space_4x"
+            android:text="@string/Recipe_txt_ingredients"
+            android:textAppearance="@style/TextAppearanceBold.h5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title_recent_detail" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_ingredients_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/Recipe_space_4x"
+            android:textAppearance="@style/TextAppearanceRegular.label"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_ingredients"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_ingredients"
+            app:layout_constraintVertical_bias="0.533"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredientList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/Recipe_space_3x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ingredients"
+            app:layout_constraintVertical_bias="0.05"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="@dimen/_45dp"
+        android:layout_height="@dimen/_45dp"
+        android:theme="@style/Progressbar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Internet-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/internetLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/internet_error" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

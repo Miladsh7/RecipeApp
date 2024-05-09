@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearanceBold">
+        <item name="fontFamily">@font/font_semiBold</item>
+    </style>
+
+    <style name="TextAppearanceRegular">
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+
+
+    <style name="TextAppearanceBold.ParagraphLight">
+        <item name="android:textSize">@dimen/Recipe_textSize_normal</item>
+        <item name="android:textColor">@color/White_0</item>
+    </style>
+
+    <style name="TextAppearanceBold.ParagraphDark">
+        <item name="android:textSize">@dimen/Recipe_textSize_normal</item>
+        <item name="android:textColor">@color/Neutral_90</item>
+    </style>
+
+    <style name="TextAppearanceBold.h4">
+        <item name="android:textSize">@dimen/Recipe_textSize_very_large</item>
+        <item name="android:textColor">@color/Neutral_90</item>
+    </style>
+
+    <style name="TextAppearanceRegular.label">
+        <item name="android:textSize">@dimen/Recipe_textSize_small</item>
+        <item name="android:textColor">@color/Neutral_30</item>
+    </style>
+
+    <style name="TextAppearanceBold.label">
+        <item name="android:textSize">@dimen/Recipe_textSize_small</item>
+        <item name="android:textColor">@color/White_0</item>
+    </style>
+
+    <style name="TextAppearanceBold.labelDark">
+        <item name="android:textSize">@dimen/Recipe_textSize_small</item>
+        <item name="android:textColor">@color/Neutral_90</item>
+    </style>
+
+    <style name="TextAppearanceBold.h5">
+        <item name="android:textSize">@dimen/Recipe_space_5x</item>
+        <item name="android:textColor">@color/Neutral_90</item>
+    </style>
+
+    <style name="TextAppearanceBold.small">
+        <item name="android:textSize">@dimen/Recipe_textSize_very_small</item>
+        <item name="android:textColor">@color/Neutral_90</item>
+    </style>
+
+    <style name="TextAppearanceRegular.small">
+        <item name="android:textSize">@dimen/Recipe_textSize_very_small</item>
+        <item name="android:textColor">@color/Neutral_30</item>
+    </style>
+
+    <style name="TextAppearanceBold.Chip">
+        <item name="android:textSize">@dimen/Recipe_textSize_very_small</item>
+    </style>
+
+    <style name="TextAppearanceBold.selected">
+        <item name="android:textSize">@dimen/Recipe_textSize_very_small</item>
+        <item name="android:textColor">@color/White_0</item>
+    </style>
+
+    <style name="TextAppearanceBold.unSelected">
+        <item name="android:textSize">@dimen/Recipe_textSize_very_small</item>
+        <item name="android:textColor">@color/Primary_30</item>
+    </style>
+
+    <style name="IconTextView">
+
+        <item name="android:drawablePadding">@dimen/Recipe_space_1x</item>
+
+        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:textColor">@color/Neutral_40</item>
+
+        <item name="drawableTint">@color/Neutral_40</item>
+
+        <item name="android:textSize">8sp</item>
+
+    </style>
+</resources>

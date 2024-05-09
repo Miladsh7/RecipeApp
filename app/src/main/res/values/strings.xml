@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">RecipApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Recipe_premium_recipes">Premium Recipes</string>
+    <string name="Recipe_60K">60K+</string>
+    <string name="Recipe_txt_button_onBoarding">start cooking</string>
+    <string name="Recipe_find_best_recipes_for_cooking">Find best recipes for cooking</string>
+    <string name="Recipe_find_best_recipes">Find best recipes
+    for cooking</string>
+    <string name="Recipe_search_recipes">Search recipes</string>
+    <string name="Recipe_trending_now">Trending now 🔥</string>
+    <string name="Recipe_popular_category">Popular category</string>
+    <string name="Recipe_txt_time">Time</string>
+    <string name="Recipe_txt_salad">salad</string>
+    <string name="Recipe_txt_breakfast">breakfast</string>
+    <string name="Recipe_txt_soup">soup</string>
+    <string name="Recipe_txt_snack">snack</string>
+    <string name="Recipe_txt_bread">bread</string>
+    <string name="Recipe_txt_sauce">sauce</string>
+    <string name="Recipe_txt_drink">drink</string>
+    <string name="Recipe_txt_dessert">dessert</string>
+    <string name="Recipe_txt_recent_recipe">Recent Recipe</string>
+    <string name="Recipe_txt_saved_recipes">Saved recipes</string>
+    <string name="Recipe_txt_video">Video</string>
+    <string name="Recipe_txt__recipe">Recipe</string>
+    <string name="Recipe_txt_my_profile">My Profile</string>
+    <string name="Recipe_txt_milad_shahsvan">Milad Shahsvan</string>
+    <string name="Recipe_txt_items">Items</string>
+    <string name="Recipe_txt_source">source</string>
+    <string name="Recipe_txt_more">more</string>
+    <string name="Recipe_txt_notification">Notification</string>
+    <string name="Recipe_txt_all">All</string>
+    <string name="Recipe_txt_unread">Unread</string>
+    <string name="Recipe_txt_read">read</string>
+    <string name="Recipe_txt_ingredients">Ingredients</string>
+    <string name="Recipe_txt_desc_profile">Hello world I’m Milad Shahsavan, I’m from Italy 🇮🇹 I love cooking so much!</string>
+    <string name="Recipe_txt_recentRecipe">RecentRecipe</string>
+    <string name="Recipe_txt_videoTrending">TrendingVideo</string>
+    <string name="Recipe_txt_check_your_connection">Check your Connection</string>
+</resources>

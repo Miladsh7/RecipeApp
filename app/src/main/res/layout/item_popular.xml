@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_203dp"
+    android:layout_marginStart="@dimen/Recipe_space_1x"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="@dimen/_172dp"
+        android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+        app:cardCornerRadius="@dimen/Recipe_space_2x"
+        app:cardElevation="@dimen/_2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frame_first"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_106dp"
+                android:background="@drawable/shape_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frame_first">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_title_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_2x"
+                    android:layout_marginBottom="@dimen/Recipe_space_7x"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textAppearance="@style/TextAppearanceBold.labelDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Pepper sweetcorn ramen" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frame_circle"
+            android:layout_width="@dimen/frame_circle_size"
+            android:layout_height="@dimen/frame_circle_size"
+            android:layout_marginHorizontal="@dimen/Recipe_space_5x"
+            android:layout_marginTop="@dimen/Recipe_space_4x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_circle"
+                android:layout_width="@dimen/img_circle_width"
+                android:layout_height="@dimen/img_circle_height"
+                android:layout_marginTop="@dimen/Recipe_space_2x"
+                app:civ_border_color="@color/Neutral_10"
+                app:civ_border_width="@dimen/Recipe_space_2x"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

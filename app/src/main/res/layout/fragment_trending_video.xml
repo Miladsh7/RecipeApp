@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.more.TrendingVideoFragment">
+
+    <!--toolbar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="@dimen/Recipe_space_1x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/Recipe_space_8x"
+            android:layout_height="@dimen/Recipe_space_8x"
+            android:layout_marginStart="@dimen/Recipe_space_3x"
+            app:tint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_6x"
+            android:textAppearance="@style/TextAppearanceBold.labelDark"
+            android:text="@string/Recipe_txt_videoTrending"
+            app:layout_constraintBottom_toBottomOf="@+id/img_back"
+            app:layout_constraintStart_toEndOf="@+id/img_back"
+            app:layout_constraintTop_toTopOf="@+id/img_back"
+            app:layout_constraintVertical_bias="0.307" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--rv_trendingVideo-->
+    <com.todkars.shimmer.ShimmerRecyclerView
+        android:id="@+id/trendingVideoList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:shimmer_recycler_shape="linear"
+        android:paddingBottom="@dimen/Recipe_space_13x"
+        app:shimmer_recycler_layout="@layout/item_video_trending_shimmer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

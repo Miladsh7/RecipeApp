@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    tools:context=".ui.webview.WebViewFragment">
+
+    <!--Toolbar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarLay"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:elevation="@dimen/_2mdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Back-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backImg"
+            android:layout_width="@dimen/Recipe_space_8x"
+            android:layout_height="@dimen/Recipe_space_8x"
+            android:layout_marginStart="@dimen/Recipe_space_3x"
+            android:padding="@dimen/Recipe_space_1x"
+            app:srcCompat="@drawable/ic_arrow_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+        <!--Title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Recipe_txt_source"
+            android:textAppearance="@style/TextAppearanceBold.labelDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--WebView-->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLay" />
+
+    <!--Loading-->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/webViewLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLay"
+        app:indicatorColor="@color/Primary_50"
+        app:trackColor="@color/Neutral_10"
+        app:trackCornerRadius="@dimen/Recipe_space_3x"
+        app:trackThickness="@dimen/Recipe_space_1x"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

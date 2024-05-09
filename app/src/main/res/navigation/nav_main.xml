@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/onBoardingFragment">
+
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.msh.recipapp.ui.onBoarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.msh.recipapp.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_popularDetailFragment2"
+            app:destination="@id/popularDetailFragment2"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_recentDetailFragment"
+            app:destination="@id/recentDetailFragment"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_trendingVideoFragment"
+            app:destination="@id/trendingVideoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recentRecipeFragment"
+            app:destination="@id/recentRecipeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/bookMarkFragment"
+        android:name="com.msh.recipapp.ui.bookMark.BookMarkFragment"
+        android:label="fragment_book_mark"
+        tools:layout="@layout/fragment_book_mark" >
+        <action
+            android:id="@+id/action_bookMarkFragment_to_popularDetailFragment2"
+            app:destination="@id/popularDetailFragment2" />
+        <action
+            android:id="@+id/action_bookMarkFragment_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.msh.recipapp.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_popularDetailFragment2"
+            app:destination="@id/popularDetailFragment2" />
+        <action
+            android:id="@+id/action_profileFragment_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.msh.recipapp.ui.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/popularDetailFragment2"
+        android:name="com.msh.recipapp.ui.detail.PopularDetailFragment"
+        android:label="PopularDetailFragment"
+        tools:layout="@layout/fragment_popular_detail">
+        <argument
+            android:name="popularId"
+            app:argType="integer" />
+        <action
+            android:id="@id/action_homeFragment_to_popularDetailFragment2"
+            app:destination="@id/popularDetailFragment2"/>
+        <action
+            android:id="@+id/action_popularDetailFragment2_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailFragment"
+        android:name="com.msh.recipapp.ui.detail.VideoDetailFragment"
+        android:label="VideoDetailFragment"
+        tools:layout="@layout/fragment_video_detail">
+
+        <argument
+            android:name="videoData"
+            app:argType="com.msh.recipapp.models.home.ResponseVideo$Video" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recentDetailFragment"
+        android:name="com.msh.recipapp.ui.detail.RecentDetailFragment"
+        android:label="RecentDetailFragment"
+        tools:layout="@layout/fragment_recent_detail">
+        <argument
+            android:name="recentId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_recentDetailFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.msh.recipapp.ui.webview.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/trendingVideoFragment"
+        android:name="com.msh.recipapp.ui.more.TrendingVideoFragment"
+        android:label="fragment_trending_video"
+        tools:layout="@layout/fragment_trending_video" >
+        <action
+            android:id="@+id/action_trendingVideoFragment_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recentRecipeFragment"
+        android:name="com.msh.recipapp.ui.more.RecentRecipeFragment"
+        android:label="RecentRecipeFragment"
+        tools:layout="@layout/fragment_recent_recipe">
+        <action
+            android:id="@+id/action_recentRecipeFragment_to_recentDetailFragment"
+            app:destination="@id/recentDetailFragment" />
+    </fragment>
+
+</navigation>

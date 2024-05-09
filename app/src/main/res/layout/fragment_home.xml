@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.home.HomeFragment">
+        <!--title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_find_best"
+            style="@style/TextAppearanceBold.h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_4x"
+            android:layout_marginTop="@dimen/Recipe_space_2x"
+            android:maxWidth="212dp"
+            android:text="@string/Recipe_find_best_recipes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--search-->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginHorizontal="@dimen/Recipe_space_4x"
+            android:layout_marginTop="@dimen/Recipe_space_3x"
+            android:background="@drawable/search_field"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="@dimen/Recipe_space_3x"
+            android:gravity="center_vertical"
+            android:hint="@string/Recipe_search_recipes"
+            android:maxLines="1"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textAppearance="@style/TextAppearanceRegular.label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_find_best">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <!--videoTrending-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_4x"
+            android:layout_marginTop="@dimen/Recipe_space_3x"
+            android:text="@string/Recipe_trending_now"
+            android:textAppearance="@style/TextAppearanceBold.h5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_search" />
+
+        <!--more-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_more_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:text="@string/Recipe_txt_more"
+            android:textAppearance="@style/TextAppearanceBold.labelDark"
+            android:textColor="@color/Primary_50"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_trending"
+            app:layout_constraintStart_toEndOf="@+id/txt_trending"
+            app:layout_constraintTop_toTopOf="@+id/txt_trending"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_1x"
+            android:layout_marginEnd="@dimen/Recipe_space_2x"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_more_trending"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_more_trending"
+            app:layout_constraintTop_toTopOf="@+id/txt_more_trending"
+            app:srcCompat="@drawable/arrow_right_red" />
+
+        <!--rv_video-->
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/videoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/Recipe_space_1x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_trending"
+            app:shimmer_recycler_layout="@layout/item_video_shimmer"
+            app:shimmer_recycler_shape="linear" />
+
+        <!--popular_title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_4x"
+            android:layout_marginTop="@dimen/Recipe_space_2x"
+            android:text="@string/Recipe_popular_category"
+            android:textAppearance="@style/TextAppearanceBold.h5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/videoList" />
+
+        <!--popularList-->
+        <HorizontalScrollView
+            android:id="@+id/btn_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginHorizontal="@dimen/Recipe_space_2x"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_popular">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_salad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_salad"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_breakfast"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_soup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_soup"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_snack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_snack"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_bread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_bread"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_sauce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_sauce"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_drink"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_dessert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/Recipe_space_1x"
+                    android:background="@drawable/unselected"
+                    android:padding="@dimen/Recipe_space_1x"
+                    android:text="@string/Recipe_txt_dessert"
+                    android:textAppearance="@style/TextAppearanceBold.Chip"
+                    android:textColor="@color/category_chip_text_color_selector" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!--rv_popular-->
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/popularList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_list"
+            app:shimmer_recycler_layout="@layout/item_popular_shimmer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_recent_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_4x"
+            android:text="@string/Recipe_txt_recent_recipe"
+            android:textAppearance="@style/TextAppearanceBold.h5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popularList" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_more_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:text="@string/Recipe_txt_more"
+            android:textAppearance="@style/TextAppearanceBold.labelDark"
+            android:textColor="@color/Primary_50"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_recent_recipe"
+            app:layout_constraintStart_toEndOf="@+id/txt_recent_recipe"
+            app:layout_constraintTop_toTopOf="@+id/txt_recent_recipe"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_1x"
+            android:layout_marginEnd="@dimen/Recipe_space_2x"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_more_recent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_more_recent"
+            app:layout_constraintTop_toTopOf="@+id/txt_more_recent"
+            app:srcCompat="@drawable/arrow_right_red" />
+
+        <!--rv_recent-->
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/recentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginBottom="@dimen/Recipe_space_13x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_recent_recipe"
+            app:shimmer_recycler_layout="@layout/item_recent_shimmer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

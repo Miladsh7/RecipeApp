@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/Recipe_space_2x"
+    android:layout_marginStart="@dimen/Recipe_space_2x"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/img_recent"
+        android:layout_width="@dimen/_124dp"
+        android:layout_height="@dimen/_124dp"
+        android:background="@color/mediumGray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/txt_title_recent"
+        android:layout_width="@dimen/_120dp"
+        android:layout_height="@dimen/Recipe_space_7x"
+        android:layout_marginTop="@dimen/Recipe_space_2x"
+        android:maxEms="8"
+        android:maxLines="2"
+        android:background="@color/mediumGray"
+        android:textAppearance="@style/TextAppearanceBold.labelDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_recent"
+        tools:text="Indonesian chicken burger" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

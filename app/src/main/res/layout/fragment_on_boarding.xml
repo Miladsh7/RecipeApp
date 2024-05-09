@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/on_boarding"
+    tools:context=".ui.onBoarding.OnBoardingFragment">
+
+    <RelativeLayout
+        android:id="@+id/rv_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Recipe_layout_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_star"
+            android:layout_width="@dimen/_16dp"
+            android:layout_height="@dimen/_16dp"
+            android:layout_marginTop="@dimen/Recipe_space_1x"
+            app:srcCompat="@drawable/star" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_2x"
+            android:layout_toEndOf="@id/img_star"
+            android:fontFamily="@font/font_semiBold"
+            android:text="@string/Recipe_60K"
+            android:textColor="@color/White_0"
+            android:textSize="@dimen/Recipe_textSize_normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Recipe_space_1x"
+            android:layout_toEndOf="@id/txt_member"
+            android:text="@string/Recipe_premium_recipes"
+            android:textColor="@color/White_0"
+            android:textSize="@dimen/Recipe_textSize_normal" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_lets_cooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_box"
+        app:srcCompat="@drawable/header_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Recipe_space_6x"
+        android:text="@string/Recipe_find_best_recipes_for_cooking"
+        android:textColor="@color/White_0"
+        android:textSize="@dimen/Recipe_textSize_normal"
+        app:layout_constraintEnd_toEndOf="@+id/img_lets_cooking"
+        app:layout_constraintStart_toStartOf="@+id/img_lets_cooking"
+        app:layout_constraintTop_toBottomOf="@id/img_lets_cooking" />
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Recipe_space_10x"
+        android:text="@string/Recipe_txt_button_onBoarding"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatTextView"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

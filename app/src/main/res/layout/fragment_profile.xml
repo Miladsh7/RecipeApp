@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <!--title-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_profile_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/Recipe_space_6x"
+        android:layout_marginTop="@dimen/Recipe_space_5x"
+        android:text="@string/Recipe_txt_my_profile"
+        android:textAppearance="@style/TextAppearanceBold.h4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--image_profile-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_99dp"
+        android:layout_marginTop="@dimen/Recipe_space_3x"
+        android:rotation="360"
+        app:layout_constraintStart_toStartOf="@id/txt_profile_recipe"
+        app:layout_constraintTop_toBottomOf="@id/txt_profile_recipe" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Recipe_space_4x"
+        android:text="@string/Recipe_txt_milad_shahsvan"
+        android:textAppearance="@style/TextAppearanceBold.h5"
+        app:layout_constraintStart_toStartOf="@id/img_profile"
+        app:layout_constraintTop_toBottomOf="@id/img_profile" />
+
+    <!--desc-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_desc_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Recipe_space_5x"
+        android:ems="15"
+        android:maxLines="2"
+        android:text="@string/Recipe_txt_desc_profile"
+        android:textAppearance="@style/TextAppearanceRegular.label"
+        app:layout_constraintStart_toStartOf="@id/txt_profile_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_profile_name" />
+
+    <LinearLayout
+        android:id="@+id/frame_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/Recipe_space_5x"
+        android:layout_marginTop="@dimen/Recipe_space_5x"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/txt_desc_profile">
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginTop="@dimen/Recipe_space_5x"
+        android:background="@color/mediumGray"
+        app:layout_constraintTop_toBottomOf="@id/frame_profile" />
+
+    <!--video-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_bookmark_video"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="@dimen/_34dp"
+        android:layout_marginStart="@dimen/Recipe_space_5x"
+        android:layout_marginTop="@dimen/Recipe_space_8x"
+        android:background="@drawable/unselected"
+        android:gravity="center"
+        android:text="@string/Recipe_txt_video"
+        android:textAppearance="@style/TextAppearanceBold.Chip"
+        android:textColor="@color/bookmark_text_color_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_profile" />
+
+    <!--Recipe-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_bookmark_Recipe"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="@dimen/_34dp"
+        android:layout_marginEnd="@dimen/Recipe_space_5x"
+        android:background="@drawable/unselected"
+        android:gravity="center"
+        android:text="@string/Recipe_txt__recipe"
+        android:textAppearance="@style/TextAppearanceBold.Chip"
+        android:textColor="@color/bookmark_text_color_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_bookmark_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_bookmark_video"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--rv_profile-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/Recipe_space_5x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_bookmark_Recipe" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/emptyLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txt_bookmark_video">
+
+        <include layout="@layout/empty_bookmark" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
