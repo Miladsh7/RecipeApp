@@ -16,5 +16,6 @@ Professional Slider with SnapHelper:Class intended to support snapping for a Rec
 
 ![photo_5918256113034315110_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/80062295-c389-44f9-a6c8-e7dac4da2778)
 
+Real-Time Internet Connection Checking : Checking the real time of the Internet for when popular and recent items have not been read and cached for the first time.
 
-
+![photo_5929265046221865005_y (1)](https://github.com/Miladsh7/RecipeApp/assets/80962004/38a68a02-ae91-4364-9208-60d769d00a7a)
