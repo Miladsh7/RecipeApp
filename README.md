@@ -12,6 +12,8 @@ Shimmer Effect for Loading: Enhances the loading experience with the shimmer eff
 
 ![photo_5929265046221864963_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/f214e124-e369-477d-b3ec-730db911f244)
 
+Professional Slider with Carousel:Class intended to support snapping for a RecyclerView.
+
 ![photo_5918256113034315110_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/80062295-c389-44f9-a6c8-e7dac4da2778)
 
 
