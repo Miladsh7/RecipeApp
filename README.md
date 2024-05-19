@@ -12,9 +12,22 @@ Shimmer Effect for Loading: Enhances the loading experience with the shimmer eff
 
 ![photo_5929265046221864963_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/f214e124-e369-477d-b3ec-730db911f244)
 
-Professional Slider with SnapHelper:Class intended to support snapping for a RecyclerView.
+Professional Slider with SnapHelper : Class intended to support snapping for a RecyclerView.
 
 ![photo_5918256113034315110_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/80062295-c389-44f9-a6c8-e7dac4da2778)
+
+
+![photo_5918256113034315112_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/6abf0df9-b91e-4d34-996e-c060eb009eb8)
+
+![photo_5918256113034315114_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/c56a44bf-44c0-4e95-925a-37a3655c8d34)
+
+![photo_5918256113034315115_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/ab26281d-1cd9-495a-b162-31a73ab3acbd)
+
+![photo_5918256113034315116_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/d81b732a-4b49-4a26-9037-8e223af08bb8)
+
+![photo_5918256113034315117_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/41c370f2-a61b-4a54-960f-96e5dca1e44e)
+
+![photo_5918256113034315118_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/3a2dc20d-e3dc-4cc8-ac65-02725861da57)
 
 Real-Time Internet Connection Checking : Checking the real time of the Internet for when popular and recent items have not been read and cached for the first time.
 
