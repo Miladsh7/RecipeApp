@@ -22,4 +22,5 @@ Real-Time Internet Connection Checking : Checking the real time of the Internet 
 
 Lottie Integration : Using Lottie animation in the bookmark section of the project as an empty state when we did not select an item as a bookmark.
 
+![photo_5918256113034315119_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/6ec2f42e-2ca1-43c4-938b-987871e5b7e7)
 
