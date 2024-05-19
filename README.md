@@ -24,3 +24,6 @@ Lottie Integration : Using Lottie animation in the bookmark section of the proje
 
 ![photo_5918256113034315119_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/6ec2f42e-2ca1-43c4-938b-987871e5b7e7)
 
+MultiViewType in ReceyclerView : Using multi view type in recycler view in the notification section of the project to show the message on different days.
+
+![photo_5918256113034315121_y](https://github.com/Miladsh7/RecipeApp/assets/80962004/2fc6f1c8-983e-419d-be83-ed48e3337fe7)
